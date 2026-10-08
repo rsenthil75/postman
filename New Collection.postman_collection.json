@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "42bb1f94-6f69-4c02-be1e-4714f7f9895a",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20760652"
+	},
+	"item": [
+		{
+			"name": "SampleGet1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/posts/1",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"posts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetReq2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/comments?postId=1",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"comments"
+					],
+					"query": [
+						{
+							"key": "postId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "postReq1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"My first Postman demo8\",\n  \"body\": \"Learning how POST requests work8\",\n  \"userId\": 8\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/posts",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Test Name\",\n  \"role\": \"SRE\",\n  \"demo\": true\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://httpbin.org/post",
+					"protocol": "https",
+					"host": [
+						"httpbin",
+						"org"
+					],
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "orderReq1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"orderId\": \"ORD-2026-1007\",\n  \"orderDate\": \"2026-10-07T21:30:00Z\",\n  \"customer\": {\n    \"customerId\": 4821,\n    \"firstName\": \"Priya\",\n    \"lastName\": \"Kumar\",\n    \"email\": \"priya.kumar@example.com\",\n    \"phone\": \"+1-314-555-0142\",\n    \"loyaltyMember\": true,\n    \"address\": {\n      \"street\": \"123 Market Street\",\n      \"city\": \"St. Louis\",\n      \"state\": \"MO\",\n      \"zip\": \"63101\",\n      \"country\": \"USA\"\n    }\n  },\n  \"items\": [\n    {\n      \"sku\": \"LAP-STAND-01\",\n      \"name\": \"Aluminum Laptop Stand\",\n      \"quantity\": 1,\n      \"unitPrice\": 49.99,\n      \"category\": \"Accessories\"\n    },\n    {\n      \"sku\": \"USB-C-HUB-7\",\n      \"name\": \"7-in-1 USB-C Hub\",\n      \"quantity\": 2,\n      \"unitPrice\": 34.5,\n      \"category\": \"Electronics\"\n    },\n    {\n      \"sku\": \"MOUSE-WL-02\",\n      \"name\": \"Wireless Mouse\",\n      \"quantity\": 1,\n      \"unitPrice\": 24.99,\n      \"category\": \"Electronics\"\n    }\n  ],\n  \"payment\": {\n    \"method\": \"CARD\",\n    \"cardType\": \"MASTERCARD\",\n    \"last4\": \"4417\",\n    \"currency\": \"USD\",\n    \"subtotal\": 143.98,\n    \"tax\": 12.24,\n    \"shipping\": 5.99,\n    \"total\": 162.21\n  },\n  \"shipping\": {\n    \"carrier\": \"UPS\",\n    \"service\": \"Ground\",\n    \"giftWrap\": false,\n    \"instructions\": \"Leave at front door\"\n  },\n  \"tags\": [\"web-order\", \"first-purchase\", \"promo-FALL26\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://postman-echo.com/post?source=postman-demo&priority=high",
+					"protocol": "https",
+					"host": [
+						"postman-echo",
+						"com"
+					],
+					"path": [
+						"post"
+					],
+					"query": [
+						{
+							"key": "source",
+							"value": "postman-demo"
+						},
+						{
+							"key": "priority",
+							"value": "high"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
